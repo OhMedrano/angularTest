@@ -1,0 +1,5 @@
+[
+      { "id": "1", "name": "Harry Potter  Book  1", "details": { "title": "Harry  Potter  and the Goblet  of  Fire", "ISBN": "1000" } },
+      { "id": "2", "name": "Harry  Potter  Book  2", "details": { "title": "Harry  Potter  and the Chamber of  Secrets", "ISBN": "1001" } },
+      { "id": "3", "name": "Harry Potter  Book  3", "details": { "title": "Harry  Potter  and the Sorcerer's  Stone", "ISBN": "1003" } }
+    ]

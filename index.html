@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+  <title></title>
+  <base href="/">
+  <link rel="stylesheet" type="text/css" href="./src/app.css">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<!--   <giphy-navi></giphy-navi> 
+<div ng-view >
+</div>
+ -->
+
+
+ <book-view></book-view>
+<!-- Core scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js'> </script>
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-resource.js'></script>
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-route.js'></script>
+
+
+
+<!-- Services -->
+
+
+<script src='src/container/book-get/book-get.module.js'> </script>
+<script src='src/container/book-get/book-get.service.js'> </script>
+
+
+<!--  Components  -->
+<script src='src/app.module.js'> </script>
+<script src='src/app.config.js'> </script>
+
+<script src='src/components/book-view/book-view.module.js'> </script>
+<script src='src/components/book-view/book-view.component.js'> </script>
+<script src='src/components/book-info/book-info.module.js'> </script>
+<script src='src/components/book-info/book-info.component.js'> </script>
+
+</body>
+</html>

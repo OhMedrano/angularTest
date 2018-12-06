@@ -1,0 +1,48 @@
+
+<div class='book_view_container'>
+  <div class='book_view_top_inner_container'style=''>
+    <div ng-repeat='book in $ctrl.bookss track by $index'  class='book' style='' ng-click='$ctrl.state.activeBook = $index; $ctrl.clickButton()' ng-class='{"activeBook": $ctrl.state.activeBook == $index}'>
+        <div class='outerShell'>
+            <div class='innerShell'>
+              <div class='title_text'>
+
+                 {{book.details.title}}
+              </div>
+            </div>
+            <div class='fakePage'>
+
+
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <div class='book_view_bottom_inner_container'>
+    <div class='search_container' ng-model='$ctrl.searchQuery' ng-submit='$ctrl.performSearch()'>
+      <div class='search_idType_container'>
+        <select ng-model='$ctrl.searchQuery.idType'>
+          <option ng-repeat='idType in $ctrl.idTypes' value='{{idType}}' ng-click='$ctrl.searchQuery.idType == idType'>
+            {{idType}}
+          </option>
+        </select>
+      </div>
+      <div class='search_query_container'>
+        <input type='text' ng-model='$ctrl.searchQuery.query' placeholder='Enter Query here' />
+      </div>
+      <div class='search_button_container'>
+        <button ng-click='$ctrl.performSearch()'> Search </button>
+        <button ng-click='$ctrl.resetBooks()'> Reset </button>
+      
+      </div>
+    </div>
+    <book-info class='book_info_element' selected-book='$ctrl.activeBook'></book-info>
+  </div>
+</div>
+
+
+
+
+
+
+
+

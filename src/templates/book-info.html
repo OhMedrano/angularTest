@@ -1,0 +1,31 @@
+<div class='book_info_container'>
+    <div class='inner_container'>
+<!--       <div ng-repeat='bookStat in $ctrl.activeSelectBook'>
+        <div class='bookStatTitle'>
+          {{bookStat.title}}
+        </div>
+        <div class='bookStatISBN'>
+          {{bookStat.ISBN}}
+        </div>
+      </div> -->
+
+      <div class='top_half container_halves' >
+        <div>
+          Book Name
+        </div>
+        <div>
+          {{$ctrl.selectedBook.details.title}} 
+        </div>
+      </div>
+
+      <div class='bottom_half container_halves'>
+        <div>
+          Book ISBN
+        </div>
+        <div>
+          {{$ctrl.selectedBook.details.ISBN}} 
+        </div>
+      </div>
+
+    </div>
+</div> 
